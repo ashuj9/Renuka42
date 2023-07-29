@@ -1,4 +1,4 @@
-package cucumber_playwright;
+package ply_tc_fb;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
