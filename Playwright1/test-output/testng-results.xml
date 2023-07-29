@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-28T15:57:56 IST" name="Default suite" finished-at="2023-07-28T15:58:08 IST" duration-ms="12417">
+  <suite started-at="2023-07-29T14:38:10 IST" name="Default suite" finished-at="2023-07-29T14:38:26 IST" duration-ms="16083">
     <groups>
     </groups>
-    <test started-at="2023-07-28T15:57:56 IST" name="Default test" finished-at="2023-07-28T15:58:08 IST" duration-ms="12417">
+    <test started-at="2023-07-29T14:38:10 IST" name="Default test" finished-at="2023-07-29T14:38:26 IST" duration-ms="16083">
       <class name="ply_tc_fb_class.testcase">
-        <test-method is-config="true" signature="open_page()[pri:0, instance:ply_tc_fb_class.testcase@13c9d689]" started-at="2023-07-28T15:57:56 IST" name="open_page" finished-at="2023-07-28T15:58:07 IST" duration-ms="11431" status="PASS">
+        <test-method is-config="true" signature="open_page()[pri:0, instance:ply_tc_fb_class.testcase@4afcd809]" started-at="2023-07-29T14:38:10 IST" name="open_page" finished-at="2023-07-29T14:38:21 IST" duration-ms="10742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_page -->
-        <test-method signature="valid_credentials()[pri:0, instance:ply_tc_fb_class.testcase@13c9d689]" started-at="2023-07-28T15:58:07 IST" name="valid_credentials" finished-at="2023-07-28T15:58:08 IST" duration-ms="946" status="PASS">
+        <test-method signature="empty_credentials()[pri:0, instance:ply_tc_fb_class.testcase@4afcd809]" started-at="2023-07-29T14:38:21 IST" name="empty_credentials" finished-at="2023-07-29T14:38:21 IST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empty_credentials -->
+        <test-method is-config="true" signature="open_page()[pri:0, instance:ply_tc_fb_class.testcase@4afcd809]" started-at="2023-07-29T14:38:21 IST" name="open_page" finished-at="2023-07-29T14:38:25 IST" duration-ms="3689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_page -->
+        <test-method signature="valid_credentials()[pri:0, instance:ply_tc_fb_class.testcase@4afcd809]" started-at="2023-07-29T14:38:25 IST" name="valid_credentials" finished-at="2023-07-29T14:38:26 IST" duration-ms="893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_credentials -->
