@@ -9,7 +9,8 @@ import org.testng.annotations.*;
 import ply_tc_fb.driver;
 import ply_tc_fb.login;
 
-public class testcase {
+public class testcase extends driver
+ {
 	
 	@BeforeMethod
 	public void open_page()
@@ -35,8 +36,26 @@ public class testcase {
 		
 		
 	}
-
+	@Test
+	public void empty_credentials()
+	{
+		login.enter_email("");
+		String act_email="";
+		assertEquals(login.email().inputValue(),act_email," email can't be empty");
 		
+		
+		 login.enter_pass("");
+		 String act_password="";
+		 assertEquals(login.password().inputValue(),act_password,"password can't be empty");
+		 
+		 login.login_click();
+		 assertTrue(login.empty().isVisible(),"mail and password can;t be empty");
+		 
+	}
+	
+	
+	
+
 	}
 	
 	
