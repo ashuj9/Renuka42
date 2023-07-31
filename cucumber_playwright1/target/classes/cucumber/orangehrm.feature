@@ -18,5 +18,4 @@ Then UserName entered sucessfully
 Given valid Password " "
 Then Password entered sucessfully
 And click on login button
-Then " username and password should n't be empty" is displayed
-
+Then " username and passwordcan't be empty" is displayed
