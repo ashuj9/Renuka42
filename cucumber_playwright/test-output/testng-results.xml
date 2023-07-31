@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-29T15:28:57 IST" name="Default suite" finished-at="2023-07-29T15:30:25 IST" duration-ms="87576">
+    <groups>
+    </groups>
+    <test started-at="2023-07-29T15:28:57 IST" name="Default test" finished-at="2023-07-29T15:30:25 IST" duration-ms="87576">
+      <class name="ply_tc_fb_class.testcase">
+        <test-method is-config="true" signature="open_page()[pri:0, instance:ply_tc_fb_class.testcase@2d3379b4]" started-at="2023-07-29T15:28:57 IST" name="open_page" finished-at="2023-07-29T15:29:17 IST" duration-ms="19592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_page -->
+        <test-method signature="empty_credentials()[pri:0, instance:ply_tc_fb_class.testcase@2d3379b4]" started-at="2023-07-29T15:29:17 IST" name="empty_credentials" finished-at="2023-07-29T15:29:47 IST" duration-ms="30033" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:140)
+at com.microsoft.playwright.Locator.click(Locator.java:2297)
+at ply_tc_fb.login.enter_email(login.java:47)
+at ply_tc_fb_class.testcase.empty_credentials(testcase.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- empty_credentials -->
+        <test-method is-config="true" signature="open_page()[pri:0, instance:ply_tc_fb_class.testcase@2d3379b4]" started-at="2023-07-29T15:29:47 IST" name="open_page" finished-at="2023-07-29T15:29:55 IST" duration-ms="7887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_page -->
+        <test-method signature="valid_credentials()[pri:0, instance:ply_tc_fb_class.testcase@2d3379b4]" started-at="2023-07-29T15:29:55 IST" name="valid_credentials" finished-at="2023-07-29T15:30:25 IST" duration-ms="30014" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:140)
+at com.microsoft.playwright.Locator.click(Locator.java:2297)
+at ply_tc_fb.login.enter_email(login.java:47)
+at ply_tc_fb_class.testcase.valid_credentials(testcase.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator("xpath=//*[@id='input-email']")
+============================================================
+    at ProgressController.run (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\guggi\AppData\Local\Temp\playwright-java-17142981488460696493\package\lib\server\dispatchers\dispatcher.js:312:46)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valid_credentials -->
+      </class> <!-- ply_tc_fb_class.testcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

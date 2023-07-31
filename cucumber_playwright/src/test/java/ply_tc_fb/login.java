@@ -4,14 +4,14 @@ import com.microsoft.playwright.Locator;
 
 public class login extends driver
 {
-	private static final String email="//*[@id='input-email']";
-	private static final String password="//*[@name='password']";
+	private static final String email="(//*[@class='oxd-input oxd-input--active'])[1]";
+	private static final String password="//*[@type='password']";
 	private static final String login="//*[@type='submit']";
 	
 	//validation
-	private static final String after_login_msg="//div[@id='content']";
-	private static final String warning_msg="//*[@class='alert alert-danger alert-dismissible'] ";
-	private static final  String empty_credentials="//*[@class='alert alert-danger alert-dismissible'] ";
+	private static final String after_login_msg="//*[@class='oxd-topbar-header-title']";
+	private static final String warning_msg=" //*[@class='oxd-text oxd-text--p oxd-alert-content-text']";
+	private static final  String empty_credentials="//*[@class='oxd-text oxd-text--p oxd-alert-content-text']";
 	/////locator
 	public static Locator email()
 	{
