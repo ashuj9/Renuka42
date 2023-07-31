@@ -14,6 +14,7 @@ public class driver
 		Browser b=pl.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 		p=b.newPage();
 		p.navigate(url);
+		System.out.println("bhbh");
 	}
 
 }
