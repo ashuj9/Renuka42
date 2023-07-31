@@ -1,4 +1,4 @@
-package cucumber_playwright;
+package ply_tc_fb;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
@@ -14,7 +14,6 @@ public class driver
 		Browser b=pl.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 		p=b.newPage();
 		p.navigate(url);
-		System.out.println("bhbh");
 	}
 
 }

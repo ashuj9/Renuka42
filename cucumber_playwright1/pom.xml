@@ -1,9 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>cucumber_playwright</groupId>
-  <artifactId>cucumber_playwright</artifactId>
+  <groupId>cucumber_playwright1</groupId>
+  <artifactId>cucumber_playwright1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   <dependencies>
+  
+  
+  
+  
+  
+  <dependencies>
 	  <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -31,7 +36,13 @@
     <version>5.2.3</version>
 </dependency>
 
-
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version>
+    <scope>test</scope>
+</dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -50,12 +61,7 @@
       <artifactId>playwright</artifactId>
       <version>1.35.1</version>
     </dependency>
-    <dependency>
-    	<groupId>Playwright1</groupId>
-    	<artifactId>Playwright1</artifactId>
-    	<version>0.1-SNAPSHOT</version>
-    </dependency>
-   </dependencies>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
@@ -71,10 +77,3 @@
     </plugins>
   </build>
 </project>
-  
-  
-  
-  
-  
-  
- 

@@ -9,9 +9,9 @@ public class login extends driver
 	private static final String login="//*[@type='submit']";
 	
 	//validation
-	private static final String after_login_msg="//div[@id='content']";
+	private static final String after_login_msg="//div[@id='content']";;
 	private static final String warning_msg="//*[@class='alert alert-danger alert-dismissible'] ";
-	private static final  String empty_credentials="//*[@class='alert alert-danger alert-dismissible'] ";
+	private static final  String empty_credentials="//*[@class='alert alert-danger alert-dismissible']";
 	/////locator
 	public static Locator email()
 	{

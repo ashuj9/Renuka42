@@ -1,17 +1,17 @@
-package cucumber_playwright;
+package ply_tc_fb;
 
 import com.microsoft.playwright.Locator;
 
 public class login extends driver
 {
-	private static final String email="//*[@id='input-email']";
+	private static final String email="//*[@name='username']";
 	private static final String password="//*[@name='password']";
 	private static final String login="//*[@type='submit']";
 	
 	//validation
-	private static final String after_login_msg="//div[@id='content']";
-	private static final String warning_msg="//*[@class='alert alert-danger alert-dismissible'] ";
-	private static final  String empty_credentials="//*[@class='alert alert-danger alert-dismissible'] ";
+	private static final String after_login_msg="//*[@class='oxd-topbar-header']";
+	private static final String warning_msg="\"//*[text()='Invalid credentials']";
+	private static final  String empty_credentials="//*[text()='Invalid credentials']";
 	/////locator
 	public static Locator email()
 	{
