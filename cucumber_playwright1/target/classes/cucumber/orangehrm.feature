@@ -19,3 +19,11 @@ Given valid Password " "
 Then Password entered sucessfully
 And click on login button
 Then " username and passwordcan't be empty" is displayed
+
+Scenario: Validate login with invalid credentials
+Given valid UserName " Adminee"
+Then UserName entered sucessfully
+Given valid Password "Admin23"
+Then Password entered sucessfully
+And click on login button
+Then " ivlaid credentials" is displayed
